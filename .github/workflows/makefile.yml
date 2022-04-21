@@ -1,0 +1,30 @@
+name: Makefile CI
+
+on:
+  push:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  
+   testing:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: arnested/go-version-action@v1
+      id: go-version
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Install Go ${{ steps.go-version.outputs.minimal }}
+      uses: actions/setup-go@v2
+      with:
+        go-version: ${{ steps.go-version.outputs.minimal }}
+    
+    - name: unit test
+      run: make test
+      
+    - name: integration tests
+      run: make test-integration   
+
