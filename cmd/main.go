@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"flag"
-	"github.com/artback/hygh/pkg/api"
-	"github.com/artback/hygh/pkg/repository/postgres"
+	"github.com/artback/queryperformance/pkg/api"
+	"github.com/artback/queryperformance/pkg/repository/postgres"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"

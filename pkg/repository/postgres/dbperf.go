@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 	sq "github.com/Masterminds/squirrel"
-	"github.com/artback/hygh/pkg/queryperf"
+	"github.com/artback/queryperformance/pkg/queryperf"
 	"strings"
 )
 

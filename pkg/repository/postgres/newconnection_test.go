@@ -5,7 +5,7 @@ package postgres_test
 
 import (
 	"context"
-	"github.com/artback/hygh/pkg/repository/postgres"
+	"github.com/artback/queryperformance/pkg/repository/postgres"
 	"testing"
 )
 

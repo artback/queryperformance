@@ -3,8 +3,8 @@ package perfhandler
 import (
 	"encoding/json"
 	"errors"
-	"github.com/artback/hygh/mocks"
-	"github.com/artback/hygh/pkg/queryperf"
+	"github.com/artback/queryperformance/mocks"
+	"github.com/artback/queryperformance/pkg/queryperf"
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang/mock/gomock"
 	"net/http"

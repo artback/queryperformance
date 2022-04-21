@@ -1,7 +1,7 @@
 package perfhandler
 
 import (
-	"github.com/artback/hygh/pkg/queryperf"
+	"github.com/artback/queryperformance/pkg/queryperf"
 	"github.com/gofiber/fiber/v2"
 )
 

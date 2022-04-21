@@ -2,8 +2,8 @@ package api
 
 import (
 	"database/sql"
-	"github.com/artback/hygh/pkg/api/handler/perfhandler"
-	"github.com/artback/hygh/pkg/repository/postgres"
+	"github.com/artback/queryperformance/pkg/api/handler/perfhandler"
+	"github.com/artback/queryperformance/pkg/repository/postgres"
 	"github.com/gofiber/fiber/v2"
 )
 

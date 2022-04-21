@@ -1,10 +1,12 @@
-module github.com/artback/hygh
+module github.com/artback/queryperformance
 
 go 1.18
 
 require (
 	github.com/Masterminds/squirrel v1.5.2
 	github.com/gofiber/fiber/v2 v2.32.0
+	github.com/golang/mock v1.6.0
+	github.com/lib/pq v1.10.5
 	github.com/ory/dockertest v3.3.5+incompatible
 )
 
@@ -17,13 +19,11 @@ require (
 	github.com/containerd/continuity v0.3.0 // indirect
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
-	github.com/golang/mock v1.6.0 // indirect
 	github.com/google/go-cmp v0.5.7 // indirect
 	github.com/gotestyourself/gotestyourself v2.2.0+incompatible // indirect
 	github.com/klauspost/compress v1.15.0 // indirect
 	github.com/lann/builder v0.0.0-20180802200727-47ae307949d0 // indirect
 	github.com/lann/ps v0.0.0-20150810152359-62de8c46ede0 // indirect
-	github.com/lib/pq v1.10.5 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.2 // indirect
 	github.com/opencontainers/runc v1.1.1 // indirect
