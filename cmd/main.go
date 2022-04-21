@@ -33,5 +33,7 @@ func main() {
 		log.Fatal(err)
 	}
 	api.SetupRoutes(db, app)
-	app.Listen(":7070")
+	if err := app.Listen(":7070"); err != nil {
+		log.Fatal(err)
+	}
 }
