@@ -39,7 +39,7 @@ func (d dbPerfRepository) QueriesByMeanTime(ctx context.Context, options querype
 	}
 	rows, err := stmt.RunWith(d.DB).PlaceholderFormat(sq.Dollar).QueryContext(ctx)
 	if err != nil {
-		return nil, err
+		return nil, fmt.Errorf("QueriesByMeanTime %w", err)
 	}
 	defer rows.Close()
 
@@ -47,10 +47,11 @@ func (d dbPerfRepository) QueriesByMeanTime(ctx context.Context, options querype
 	for rows.Next() {
 		var m queryperf.Measure
 		if err := rows.Scan(&m.Query, &m.Calls, &m.MeanExecTime, &m.TotalExecTime, &m.StdDevExecTime, &m.NrOfRows); err != nil {
-			return &result, err
+			return &result, fmt.Errorf("QueriesByMeanTime %w", err)
 		}
 		result = append(result, m)
 	}
+
 	return &result, rows.Err()
 }
 
