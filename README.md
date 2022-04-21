@@ -59,7 +59,7 @@ Returns a list of queries and there mean,total,calls and rows retrived or affect
 
 ### Sample request
 
-```curl --get --include 'http://127.0.0.1:7070/performance?sort_by=mean_exec_time'```
+```curl --get --include 'http://127.0.0.1:7070/performance?sort_by=mean_exec_time&offset=7&limit=3'```
 
 ### Sample response
 
