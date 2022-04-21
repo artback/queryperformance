@@ -39,12 +39,19 @@ Returns a list of queries and there mean,total,calls and rows retrived or affect
 ### Parameters
 
 | Parameter | Description | Data Type |
+
 |-----------|------|-----|-----------|
+
 | sort_by | *Optional*. Column to order result by. Default is unordered. | string |
+
 | asc | *Optional*. Sort by ASC order. Default is false and will sort by DESC order. | bool |
+
 | offset | *Optional*. Pagnation offset, default 0 | uint
+
 | limit | *Optional*. Pagnation limit, default is show all | uint
+
 | statement | *Optional*. Only queries containing Statement,Multiple values will show queries with either, default show all | string
+
 | Mincalls | *Optional*. Only queries with calls equal or greater than mincalls, default 0 | int
 
 
